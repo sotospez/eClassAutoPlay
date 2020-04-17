@@ -4,9 +4,11 @@
  *
  * Run this on non video - audio slides
  */
-var timer = Math.floor(Math.random() * (25000 - 15000 + 1) + 15000);
+
 var  checkEl = function() {
+
     console.log("LOAD");
+    var timer = Math.floor(Math.random() * (25000 - 15000 + 1) + 15000);
     try{
         // load the element for check
         // slides element
@@ -20,6 +22,8 @@ var  checkEl = function() {
             console.log("CLICK");
         setTimeout(function () {
             //repeat check
+            console.log("TIME SET:",timer);
+
             checkEl();
         }, timer);
     }else{
